@@ -10,25 +10,7 @@ This project aims to predict customer spending behavior over a 90-day period usi
 - **Scikit-learn**: Model selection and hyperparameter tuning
 - **Joblib**: Model persistence
 
-## Project Structure
-```
-.
-├── data
-│   └── cdnow.csv                     # Input dataset
-├── saved_data
-│   ├── xgb_reg_model.pkl             # Saved XGBoost regression model
-│   ├── xgb_classifier_model.pkl      # Saved XGBoost classification model
-│   ├── imp_feature_amt_spend.pkl     # Feature importance for regression model
-│   ├── imp_feature_prob_spend.pkl    # Feature importance for classification model
-│   └── final_df.csv                  # Final DataFrame with predictions
-├── src
-│   ├── analysis.py                   # Functions for cohort and feature analysis
-│   ├── model.py                      # Model training and prediction functions
-│   ├── utils.py                      # Utility functions (e.g., data loading)
-│   └── main.py                       # Main script to run the analysis and modeling
-├── README.md                         # Project documentation
-└── requirements.txt                  # Python package dependencies
-```
+
 
 ## Key Components and Functionality
 
@@ -53,8 +35,7 @@ The `model_prediction` function uses XGBoost to predict the amount customers wil
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/customer-lifetime-value.git
-    cd customer-lifetime-value
+    git clone https://github.com/AtharvMSaraf/CLV_RFM_Analysis
     ```
 
 2. **Install the required packages:**
@@ -64,21 +45,7 @@ The `model_prediction` function uses XGBoost to predict the amount customers wil
 
 3. **Run the main script:**
     ```bash
-    python src/main.py
+    python CustomerAnalyis/Customer_LTV.py
     ```
 
-## Future Enhancements
-- **Enhance Feature Set**: Incorporate additional features such as customer demographics or product categories.
-- **Advanced Models**: Explore other machine learning models or ensemble methods to improve prediction accuracy.
-- **Real-time Predictions**: Implement real-time predictions and updates.
-- **Deployment**: Develop a web application or API for easy access to the prediction models and insights.
 
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements, bug fixes, or new features.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-For any questions or further information, please contact [your-email@example.com](mailto:your-email@example.com).
