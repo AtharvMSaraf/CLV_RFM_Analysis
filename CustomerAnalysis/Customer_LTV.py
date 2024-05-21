@@ -180,6 +180,17 @@ def model_prediction(feature_df):
     ax[1].set_ylabel('Value')
     # plt.show()
 
+
+    # ---------------- Customer segmentation -----------------------------------------
+
+    # categorise customers into
+        # - VIP
+        # - Regular
+        # - New
+        # - Slipping VIP
+        # - Slipping customer
+        # - Lost Customer
+
     # ---------------- Saving the Data -----------------------------------------------
     
 
